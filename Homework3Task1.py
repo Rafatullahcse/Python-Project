@@ -1,10 +1,10 @@
-def check_triangle(a, b, c):
-    if a + b > c and a + c > b and b + c > a:
+def check_triangle(length1, length2, length3):
+    if length1 + length2 > length3 and length1 + length3 > length2 and length2 + length3 > length1:
         print("The side lengths can form a triangle.")
 
-        if a == b == c:
+        if length1 == length2 == length3:
             print("The triangle is equilateral.")
-        elif a == b or a == c or b == c:
+        elif length1 == length2 or length1 == length3 or length2 == length3:
             print("The triangle is isosceles.")
         else:
             print("The triangle is scalene.")
